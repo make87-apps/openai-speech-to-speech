@@ -2,5 +2,8 @@ build_kit:
   name: rust
   version: latest
 inbound_topics:
-  - name: INCOMING_MESSAGE
-    message_type: make87_messages.text.text_plain.PlainText
+  - name: USER_AUDIO
+    message_type: make87_messages.audio.frame_pcm_s16le.FramePcmS16Le
+outbound_topics:
+  - name: OPENAI_AUDIO
+    message_type: make87_messages.audio.frame_pcm_s16le.FramePcmS16Le
