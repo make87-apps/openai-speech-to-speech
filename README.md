@@ -1,1 +1,1 @@
-# Subscriber Template for Rust
+# OpenAI Realtime Speech-to-Speech API

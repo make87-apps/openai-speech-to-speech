@@ -1,9 +1,15 @@
 build_kit:
-  name: rust
+  name: python3
   version: latest
 inbound_topics:
   - name: USER_AUDIO
-    message_type: make87_messages.audio.frame_pcm_s16le.FramePcmS16Le
+    message_type: make87_messages.audio.frame_pcm_s16le.FramePcmS16le
 outbound_topics:
   - name: OPENAI_AUDIO
-    message_type: make87_messages.audio.frame_pcm_s16le.FramePcmS16Le
+    message_type: make87_messages.audio.frame_pcm_s16le.FramePcmS16le
+config:
+  values:
+    - name: OPENAI_API_KEY
+      description: "Your OpenAI API key."
+      required: true
+      secret: true
